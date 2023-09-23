@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/superheroapplication/static/css/main.9d98badb.css",
-    "main.js": "/superheroapplication/static/js/main.d58f0a6b.js",
-    "static/js/787.cc79deb9.chunk.js": "/superheroapplication/static/js/787.cc79deb9.chunk.js",
-    "index.html": "/superheroapplication/index.html",
-    "main.9d98badb.css.map": "/superheroapplication/static/css/main.9d98badb.css.map",
-    "main.d58f0a6b.js.map": "/superheroapplication/static/js/main.d58f0a6b.js.map",
-    "787.cc79deb9.chunk.js.map": "/superheroapplication/static/js/787.cc79deb9.chunk.js.map"
+    "main.css": "/SuperHeroApplication/static/css/main.9d98badb.css",
+    "main.js": "/SuperHeroApplication/static/js/main.0700cd6d.js",
+    "static/js/787.cc79deb9.chunk.js": "/SuperHeroApplication/static/js/787.cc79deb9.chunk.js",
+    "index.html": "/SuperHeroApplication/index.html",
+    "main.9d98badb.css.map": "/SuperHeroApplication/static/css/main.9d98badb.css.map",
+    "main.0700cd6d.js.map": "/SuperHeroApplication/static/js/main.0700cd6d.js.map",
+    "787.cc79deb9.chunk.js.map": "/SuperHeroApplication/static/js/787.cc79deb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d98badb.css",
-    "static/js/main.d58f0a6b.js"
+    "static/js/main.0700cd6d.js"
   ]
 }
