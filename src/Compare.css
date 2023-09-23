@@ -1,0 +1,21 @@
+.compare {
+  background-size: cover;
+  width: 100%;
+  min-width: 100%;
+  color: #fff;
+  background-position: center;
+  height: 100vh;
+  max-height: 100em;
+  position: relative;
+}
+.compare_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
