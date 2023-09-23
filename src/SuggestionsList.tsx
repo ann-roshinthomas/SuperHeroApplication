@@ -83,8 +83,7 @@ const SuggestionsList = ({
     setOpen(true);
     setShowSuggestions(false);
   };
-  console.log("showsuggestions", showSuggestions);
-  console.log("suggestions", suggestions);
+
   return (
     <div className="div_suggestions">
       {showSuggestions && suggestions.length > 0 && (
