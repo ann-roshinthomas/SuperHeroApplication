@@ -33,6 +33,17 @@
   padding-left: 20px;
 }
 
+@media (max-width: 750px) {
+  .input {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .input {
+    margin-top: 75%;
+  }
+}
+
 .div_suggestions {
   width: 41%;
 }

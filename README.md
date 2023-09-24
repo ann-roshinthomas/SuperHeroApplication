@@ -32,3 +32,4 @@ Open [http://localhost:3000] to view it in the browser.
 1. React Router hashlink to navigate between Search and Compare pages - To enable smooth scrolling and place all content on a single scrollable page
 2. Search bar implemented with debounce - To minimize API hits
 3. Modal window and compare table implemented with Material UI - It provides attractive UI with fast implementation
+4. Added Responsive web design for Mobile Phones.

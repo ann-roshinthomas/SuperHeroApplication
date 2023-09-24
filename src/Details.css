@@ -1,3 +1,35 @@
 .details_div {
   display: flex;
+  align-items: center;
+}
+.btn_div {
+  width: 100%;
+  margin: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  .details_div {
+    flex-direction: column;
+  }
+  .img_div {
+    height: 10px;
+  }
+  .img_div > img {
+    width: 480px;
+    max-width: 480px;
+    height: 580px;
+    max-height: 700px;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .img_div > img {
+    width: 380px;
+    max-width: 380px;
+    height: 580px;
+    max-height: 650px;
+    margin: 10px;
+  }
 }

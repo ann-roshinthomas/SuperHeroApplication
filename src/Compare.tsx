@@ -72,8 +72,8 @@ const createRows = (compareList: any) => {
     createData("Name", name),
     createData("Full Name", fullName),
     createData("Gender", gender),
-    createData("Occupation", occupation),
-    createData("First Appearance", firstAppearance),
+    // createData("Occupation", occupation),
+    // createData("First Appearance", firstAppearance),
     createData("Height", height),
     createData("Weight", weight),
     createData("Eye color", eyeColor),
@@ -84,7 +84,7 @@ const createRows = (compareList: any) => {
     createData("Strength", strength),
     createData("Power", power),
   ];
-  console.log("rows---------------", rows);
+
   return rows;
 };
 
@@ -118,6 +118,18 @@ export default function Compare({ compareList, setCompareList }: compareTypes) {
                   ml: 12,
                   bgcolor: "#007F82",
                   "&:hover": { bgcolor: "#00A8A8" },
+                  "@media screen and (max-width: 750px)": {
+                    ml: 0,
+                    p: 1,
+                    fontSize: "x-small",
+                    fontWeight: "normal",
+                  },
+                  "@media screen and (max-width: 500px)": {
+                    ml: 0,
+                    p: 1,
+                    fontSize: "x-small",
+                    fontWeight: "normal",
+                  },
                 }}
                 onClick={(event) => handleRemove(row.id)}
               >

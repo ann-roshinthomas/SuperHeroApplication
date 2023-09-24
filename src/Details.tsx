@@ -54,7 +54,7 @@ function Details({
   const handleClose = () => setOpen(false);
 
   const handleAddtoCompare = (data: detailType) => {
-    if (compareList.length > 6) {
+    if (compareList.length > 5) {
       alert("Compare count exceeded");
     } else {
       let newdata = [...compareList, data];
@@ -83,28 +83,53 @@ function Details({
           transform: "translate(-50%, -50%)",
           width: 1000,
           height: 700,
+          "@media screen and (max-width: 750px)": {
+            width: 500,
+            p: 0,
+          },
+          "@media screen and (max-width: 500px)": {
+            width: 380,
+            p: 0,
+          },
           bgcolor: "background.paper",
-
           boxShadow: 24,
           p: 4,
         }}
       >
         <div className="details_div">
           <ModalClose variant="plain" sx={{ m: 1 }} />
-          <img
-            srcSet={`${data.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            src={`${data.image}?w=164&h=164&fit=crop&auto=format`}
-          />
+          <div className="img_div">
+            <img
+              srcSet={`${data.image}`}
+              src={`${data.image}?fit=crop&&auto=format`}
+            />
+          </div>
           <List
             sx={{
               width: "100%",
               maxWidth: 450,
               maxHeight: 600,
+              "@media screen and (max-width: 750px)": {
+                maxWidth: 480,
+                maxHeight: 800,
+                margin: 0,
+                opacity: 0.9,
+              },
+              "@media screen and (max-width: 500px)": {
+                maxWidth: 390,
+                maxHeight: 800,
+                margin: 0,
+                opacity: 0.9,
+              },
               overflow: "auto",
               bgcolor: "background.paper",
             }}
           >
-            <ListItem sx={{ p: 2 }}>
+            <ListItem
+              sx={{
+                p: 2,
+              }}
+            >
               <ListItemAvatar>
                 <Avatar sx={{ bgcolor: "#007F82" }}></Avatar>
               </ListItemAvatar>
@@ -183,32 +208,42 @@ function Details({
             </ListItem>
           </List>
         </div>
-        {!isCompare && (
+        <div className="btn_div">
+          {!isCompare && (
+            <Button
+              sx={{
+                my: 2,
+                bgcolor: "#007F82",
+                "&:hover": { bgcolor: "#00A8A8" },
+              }}
+              onClick={(event) => handleAddtoCompare(data)}
+            >
+              Add To Compare
+            </Button>
+          )}
+          {isCompare && (
+            <Button
+              sx={{
+                my: 2,
+                bgcolor: "#007F82",
+                "&:hover": { bgcolor: "#00A8A8" },
+              }}
+              onClick={(event) => handleRemoveCompare(data)}
+            >
+              Remove from Compare
+            </Button>
+          )}
           <Button
             sx={{
-              ml: 50,
-              my: 5,
+              ml: 2,
               bgcolor: "#007F82",
               "&:hover": { bgcolor: "#00A8A8" },
             }}
-            onClick={(event) => handleAddtoCompare(data)}
+            onClick={handleClose}
           >
-            Add To Compare
+            Close
           </Button>
-        )}
-        {isCompare && (
-          <Button
-            sx={{
-              ml: 50,
-              my: 5,
-              bgcolor: "#007F82",
-              "&:hover": { bgcolor: "#00A8A8" },
-            }}
-            onClick={(event) => handleRemoveCompare(data)}
-          >
-            Remove from Compare
-          </Button>
-        )}
+        </div>
       </Box>
     </Modal>
   );
