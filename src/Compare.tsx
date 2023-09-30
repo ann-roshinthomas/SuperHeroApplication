@@ -4,26 +4,7 @@ import Button from "@mui/joy/Button";
 import Table from "@mui/joy/Table";
 import Sheet from "@mui/joy/Sheet";
 import { TableCell } from "@mui/material";
-type detailType = {
-  id: string;
-  name: string;
-  intelligence: string;
-  strength: string;
-  speed: string;
-  durability: string;
-  power: string;
-  fullName: string;
-  birthPlace: string;
-  firstAppearance: string;
-  gender: string;
-  race: string;
-  height: string;
-  weight: string;
-  eyeColor: string;
-  hairColor: string;
-  occupation: string;
-  image: string;
-};
+import { detailType } from "./detailType";
 
 interface compareTypes {
   compareList: detailType[];

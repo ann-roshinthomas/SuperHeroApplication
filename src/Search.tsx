@@ -1,29 +1,8 @@
 import { useState } from "react";
 import SuggestionsList from "./SuggestionsList";
 import "./Search.css";
+import { detailType } from "./detailType";
 const debounce = require("lodash.debounce");
-
-type detailType = {
-  id: string;
-  name: string;
-  intelligence: string;
-  strength: string;
-  speed: string;
-  durability: string;
-  power: string;
-  fullName: string;
-  birthPlace: string;
-  firstAppearance: string;
-  gender: string;
-  race: string;
-  height: string;
-  weight: string;
-  eyeColor: string;
-  hairColor: string;
-  occupation: string;
-  publisher: string;
-  image: string;
-};
 
 interface searchTypes {
   compareList: detailType[];

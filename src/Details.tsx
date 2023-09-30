@@ -12,29 +12,8 @@ import WorkIcon from "@mui/icons-material/Work";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import Face6Icon from "@mui/icons-material/Face6";
+import { detailType } from "./detailType";
 import "./Details.css";
-
-type detailType = {
-  id: string;
-  name: string;
-  intelligence: string;
-  strength: string;
-  speed: string;
-  durability: string;
-  power: string;
-  fullName: string;
-  birthPlace: string;
-  firstAppearance: string;
-  gender: string;
-  race: string;
-  height: string;
-  weight: string;
-  eyeColor: string;
-  hairColor: string;
-  occupation: string;
-  publisher: string;
-  image: string;
-};
 
 type detailProps = {
   open: boolean;

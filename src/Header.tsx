@@ -4,27 +4,8 @@ import "./Header.css";
 import Compare from "./Compare";
 import Search from "./Search";
 import { Tooltip } from "@mui/material";
-type detailType = {
-  id: string;
-  name: string;
-  intelligence: string;
-  strength: string;
-  speed: string;
-  durability: string;
-  power: string;
-  fullName: string;
-  birthPlace: string;
-  firstAppearance: string;
-  gender: string;
-  race: string;
-  height: string;
-  weight: string;
-  eyeColor: string;
-  hairColor: string;
-  occupation: string;
-  publisher: string;
-  image: string;
-};
+import { detailType } from "./detailType";
+
 function Header() {
   const [compareList, setCompareList] = useState<detailType[]>([]);
 
